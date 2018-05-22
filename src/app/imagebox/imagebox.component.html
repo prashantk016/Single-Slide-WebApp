@@ -1,0 +1,6 @@
+<div class="imagebox-div" DnDimage (click)="change_focus($event)" (filesChangeEmiter)="onFilesChange($event)" (mousedown)="onMouseDown($event)" (mouseup)="onMouseUp($event)" (mousemove)="onMouseMove($event)">
+<span class="close" (click)="close_box()"><i class="far fa-times-circle"></i></span>
+<span class="selectImage" (click)="selectImage($event)"><i class="fas fa-image"></i></span>
+<img [src]="url" height="200"> <br/>
+<input type='file' (change)="onSelectFile($event)">
+</div>

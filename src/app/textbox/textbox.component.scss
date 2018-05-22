@@ -1,0 +1,34 @@
+@import "./../../scss/variable.scss";
+@import "./../../scss/mixin.scss";
+.textbox-div{
+    position: absolute;
+    height: 70px;
+    
+    @include round-corners(5px);
+
+}
+.box-move{
+    cursor: move;
+    height: 30%;
+   background-color: $nav-bar-color;
+   border-radius: 5px 5px 0 0;
+}
+.textarea{
+    border-radius: 0 0 5px 5px;
+    height: 70%;
+    @include shadow(1px 1px 3px 2px #C6D0D3);
+}
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 3px 3px 2px 2px;
+    font-size: 16px;
+    font-weight: bolder;
+    @include filter(brightness(1));
+    color: rgba(255, 255, 255, 0.7);
+        &:hover {
+        @include transform(scale(1.2,1.2));
+        border-radius: 0px 5px 0px 7px;
+    }
+}

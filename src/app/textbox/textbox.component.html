@@ -1,0 +1,7 @@
+<div class="textbox-div" (click)="change_focus($event)">
+   
+    <div class="box-move" (mousedown)="onMouseDown($event)" (mouseup)="onMouseUp($event)" (mousemove)="onMouseMove($event)">
+            <span class="close" (click)="close_box()"><i class="far fa-times-circle"></i></span>   
+    </div>
+    <textarea class="textarea" (focus)="change_focus($event)"></textarea>
+</div>

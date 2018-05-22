@@ -1,0 +1,39 @@
+/*Tag Selectors*/
+@import "./../../scss/variable.scss";
+@import "./../../scss/mixin.scss";
+@import "./../../scss/common.scss";
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+nav {
+    background-color: $nav-bar-color;
+    height: 50px;
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+    a {
+        text-decoration: none;
+    }
+    a span {
+        margin:10px;
+        width: 50px;
+        height: 50px;
+        @include filter(brightness(0) invert(1));
+        @include transition(.3s ease-in-out);
+        &:hover {
+            @include transform(rotate(10deg));
+            @include filter(brightness(0) invert(0.9));
+        }
+    }
+    .label {
+        letter-spacing: 2px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 35px;
+        color: rgb(255, 255, 255);
+        margin: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+        @include transition(.3s ease-in-out);
+        &:hover{
+           letter-spacing: 10px;
+         
+        }
+    }
+}

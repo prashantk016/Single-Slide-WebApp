@@ -1,0 +1,10 @@
+<nav #navbar id="nav-bar" class="nav">
+  <label class="label">Slides</label>
+  <a id="imageAnchor" href="#" (click)="slideAreaComponent.createImageBox()" class="pull-right">
+     <span class="far fa-images fa-2x" draggable="true" (dragstart)="dragstart_handler_image($event)" title="Add Image"></span>
+  </a>
+  <a id="textBoxAnchor" href="#" (click)="slideAreaComponent.createTextBox()"  class="pull-right">
+    <span class="far fa-edit fa-2x" draggable="true" (dragstart)="dragstart_handler_text($event)" title="Add TextBox"></span>  
+  </a>
+  
+</nav>
